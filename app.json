@@ -1,7 +1,8 @@
 {
   "expo": {
     "name": "Course",
-    "slug": "Course",
+    "slug": "aora-bymnuygnneb3beo8a1lmg",
+    "scheme": "Aora",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +16,31 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "package": "com.abouzaid.aora",
+      "bundleIdentifier": "com.abouzaid.aora"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.abouzaid.aora"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
-    }
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "0c54e9ba-9289-4d9e-87e8-7ad005875332"
+      }
+    },
+    "owner": "abouzaid"
   }
 }
